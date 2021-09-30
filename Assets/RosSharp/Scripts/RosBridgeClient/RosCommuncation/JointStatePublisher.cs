@@ -1,7 +1,7 @@
-﻿/*
+﻿  
+/*
 © Siemens AG, 2017-2019
 Author: Dr. Martin Bischoff (martin.bischoff@siemens.com)
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -14,6 +14,7 @@ limitations under the License.
 */
 
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
@@ -30,10 +31,15 @@ namespace RosSharp.RosBridgeClient
             InitializeMessage();
         }
 
-        private void FixedUpdate()
+       /* private void FixedUpdate()
         {
             UpdateMessage();
-        }
+        }*/
+
+       public void SendPos()
+       {
+           UpdateMessage();
+       }
 
         private void InitializeMessage()
         {
@@ -51,9 +57,16 @@ namespace RosSharp.RosBridgeClient
         private void UpdateMessage()
         {
             message.header.Update();
+            Debug.Log(JointStateReaders.Count);
             for (int i = 0; i < JointStateReaders.Count; i++)
-                UpdateJointState(i);
-
+            {
+                if (JointStateReaders[i] != null)
+                {
+                    Debug.Log(i);
+                    UpdateJointState(i);
+                }
+                
+            }
             Publish(message);
         }
 

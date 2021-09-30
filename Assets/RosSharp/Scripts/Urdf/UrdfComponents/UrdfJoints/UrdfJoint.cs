@@ -117,6 +117,10 @@ namespace RosSharp.Urdf
         {
             return 0;
         }
+        public virtual void off()
+        {
+            Debug.Log("BLAH");
+        }
 
         public void UpdateJointState(float deltaState)
         {

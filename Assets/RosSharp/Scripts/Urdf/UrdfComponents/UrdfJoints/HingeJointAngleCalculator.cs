@@ -13,7 +13,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HingeJointAngleCalculator : MonoBehaviour
 {
@@ -22,12 +24,15 @@ public class HingeJointAngleCalculator : MonoBehaviour
     private Vector3 vectorInRotationPlane;
     private Quaternion initialRotationInverse;
 
+    private float offsetAngle =0;
+    public float finalOffset;
+    public TMPro.TMP_Text angleText;
     public float Angle
     {
         get
         {
             Quaternion actualRelativeRotation = initialRotationInverse * transform.localRotation;
-            return Vector3.SignedAngle(vectorInRotationPlane, actualRelativeRotation * vectorInRotationPlane, axis);
+            return finalOffset+Vector3.SignedAngle(vectorInRotationPlane, actualRelativeRotation * vectorInRotationPlane, axis);
         }
     }
 
@@ -38,5 +43,25 @@ public class HingeJointAngleCalculator : MonoBehaviour
         vectorInRotationPlane = Vector3.right;
         Vector3.OrthoNormalize(ref axis, ref vectorInRotationPlane);
         initialRotationInverse = Quaternion.Inverse(transform.localRotation);
+    }
+
+    public void AddOffset()
+    {
+        float offsetValue = 0.5f;
+        finalOffset += offsetValue;
+        angleText.text = this.Angle.ToString();
+    }
+    
+    public void SubOffset()
+    {
+        float offsetValue = 0.5f;
+        finalOffset -= offsetValue;
+        angleText.text = Angle.ToString();
+    }
+
+    public void setOffset()
+    {
+        finalOffset = 0;
+        angleText.text = Angle.ToString();
     }
 }

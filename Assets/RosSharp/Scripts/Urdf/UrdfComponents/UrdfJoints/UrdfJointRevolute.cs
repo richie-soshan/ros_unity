@@ -40,6 +40,12 @@ namespace RosSharp.Urdf
             return -GetComponent<HingeJointAngleCalculator>().Angle * Mathf.Deg2Rad;
         }
 
+        public override void off()
+        {
+            GetComponent<HingeJointAngleCalculator>().setOffset();
+        }
+        
+
         public override float GetVelocity()
         {
             return -((HingeJoint)UnityJoint).velocity * Mathf.Deg2Rad;

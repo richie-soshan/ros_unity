@@ -36,5 +36,10 @@ namespace RosSharp.RosBridgeClient
             velocity = urdfJoint.GetVelocity();
             effort = urdfJoint.GetEffort();
         }
+
+        public void callOff()
+        {
+            urdfJoint.off();
+        }
     }
 }
