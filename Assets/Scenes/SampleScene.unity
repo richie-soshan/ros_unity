@@ -2754,6 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 1612799697}
 --- !u!114 &434480074
 MonoBehaviour:
@@ -4312,6 +4313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 113740824}
 --- !u!114 &726276747
 MonoBehaviour:
@@ -6435,7 +6437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: 
-  JointStateReaders: []
+  JointStateReaders:
+  - {fileID: 0}
   FrameId: Unity
 --- !u!114 &1035250631
 MonoBehaviour:
@@ -6530,6 +6533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 1660955787}
 --- !u!114 &1087344234
 MonoBehaviour:
@@ -7739,6 +7743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 921563076}
 --- !u!114 &1291329472
 MonoBehaviour:
@@ -11678,6 +11683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 1692769341}
 --- !u!114 &1884653973
 MonoBehaviour:
@@ -12223,7 +12229,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1035250630}
         m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
-        m_MethodName: SendPublish
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13134,6 +13140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalOffset: 0
   angleText: {fileID: 962573897}
 --- !u!114 &2065038108
 MonoBehaviour:

@@ -39,6 +39,10 @@ namespace RosSharp.RosBridgeClient
        public void SendPos()
        {
            UpdateMessage();
+           for (int i = 0; i < JointStateReaders.Count; i++)
+           {
+               JointStateReaders[i].callOff();
+           }
        }
 
         private void InitializeMessage()
