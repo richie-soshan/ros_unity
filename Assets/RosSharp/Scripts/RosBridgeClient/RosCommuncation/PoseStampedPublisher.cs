@@ -24,6 +24,16 @@ namespace RosSharp.RosBridgeClient
     {
         public Transform PublishedTransform;
         public string FrameId = "Unity";
+        public float offsetvalx = 0;
+        public float offsetvaly = 0;
+        public float offsetvalz = 0;
+        public float offsetvalqx = 0;
+        public float offsetvalqy = 0;
+        public float offsetvalqz = 0;
+        public float offsetValue = 0.001f;
+        public float degoff = 20f;
+     
+
 
         private MessageTypes.Geometry.PoseStamped message;
 
@@ -33,10 +43,7 @@ namespace RosSharp.RosBridgeClient
             InitializeMessage();
         }
 
-        private void FixedUpdate()
-        {
-            UpdateMessage();
-        }
+        
 
         private void InitializeMessage()
         {
@@ -49,28 +56,131 @@ namespace RosSharp.RosBridgeClient
             };
         }
 
-        private void UpdateMessage()
+        private void UpdateMessage() 
         {
             message.header.Update();
-            GetGeometryPoint(PublishedTransform.position.Unity2Ros(), message.pose.position);
-            GetGeometryQuaternion(PublishedTransform.rotation.Unity2Ros(), message.pose.orientation);
+            Vector3 offsetVector = new Vector3(offsetvalx, offsetvaly, offsetvalz);
+            offsetVector += PublishedTransform.position;
+            Debug.Log(offsetVector.x + " "+offsetVector.y+ " " +offsetVector.z +" "  + offsetvalx);
+            GetGeometryPoint(offsetVector.Unity2Ros(), message.pose.position);
+            Vector3 rot = PublishedTransform.rotation.eulerAngles;
+            rot += new Vector3(offsetvalqx, offsetvalqy, offsetvalqz);
+            Quaternion quaternion = Quaternion.Euler(rot);
+            GetGeometryQuaternion(quaternion.Unity2Ros(), message.pose.orientation);
 
             Publish(message);
+            setzero();
         }
 
-        private static void GetGeometryPoint(Vector3 position, MessageTypes.Geometry.Point geometryPoint)
-        {
-            geometryPoint.x = position.x;
-            geometryPoint.y = position.y;
-            geometryPoint.z = position.z;
+        private void GetGeometryPoint(Vector3 position, MessageTypes.Geometry.Point geometryPoint)
+        {   
+            geometryPoint.x =  position.x;
+            Debug.Log(position.x);
+            geometryPoint.y =  position.y;
+            geometryPoint.z =  position.z;
         }
 
-        private static void GetGeometryQuaternion(Quaternion quaternion, MessageTypes.Geometry.Quaternion geometryQuaternion)
+        private void GetGeometryQuaternion(Quaternion quaternion, MessageTypes.Geometry.Quaternion geometryQuaternion)
         {
-            geometryQuaternion.x = quaternion.x;
-            geometryQuaternion.y = quaternion.y;
-            geometryQuaternion.z = quaternion.z;
+            geometryQuaternion.x =  quaternion.x;
+            geometryQuaternion.y =  quaternion.y;
+            geometryQuaternion.z =  quaternion.z;
             geometryQuaternion.w = quaternion.w;
+        }
+
+        public void AddOffsetx()
+        {
+           
+            offsetvalx += offsetValue;
+            // angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsetx()
+        {
+            
+            offsetvalx -= offsetValue;
+            //angleText.text = Angle.ToString();
+        }
+        public void AddOffsety()
+        {
+            
+            offsetvaly += offsetValue;
+            //angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsety()
+        {
+            
+            offsetvaly -= offsetValue;
+            //angleText.text = Angle.ToString();
+        }
+        public void AddOffsetz()
+        {
+            
+            offsetvalz += offsetValue;
+            //angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsetz()
+        {
+            
+            offsetvalz -= offsetValue;
+            //angleText.text = Angle.ToString();
+        }
+        public void AddOffsetqx()
+        {
+           
+            offsetvalqx += offsetValue;
+            //angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsetqx()
+        {
+           
+            offsetvalqx -= offsetValue;
+          //angleText.text = Angle.ToString();
+        }
+        public void AddOffsetqy()
+        {
+           
+            offsetvalqy += offsetValue;
+            //angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsetqy()
+        {
+            
+            offsetvalqy -= offsetValue;
+         // angleText.text = Angle.ToString();
+        }
+        public void AddOffsetqz()
+        {
+            
+            offsetvalqz += offsetValue;
+            //angleText.text = this.Angle.ToString();
+        }
+
+        public void SubOffsetqz()
+        {
+            
+            offsetvalqz -= offsetValue;
+            //angleText.text = Angle.ToString();
+        }
+
+        public void SendPos()
+        {
+            UpdateMessage();
+
+        }
+
+        public void setzero()
+        {
+            offsetvalx = 0;
+            offsetvaly = 0;
+            offsetvalz = 0;
+            offsetvalqx = 0;
+            offsetvalqy = 0;
+            offsetvalqz = 0;
         }
 
     }

@@ -45,16 +45,21 @@ public class HingeJointAngleCalculator : MonoBehaviour
         initialRotationInverse = Quaternion.Inverse(transform.localRotation);
     }
 
+    private void Update()
+    {
+        angleText.text = this.Angle.ToString();
+    }
+
     public void AddOffset()
     {
-        float offsetValue = 0.5f;
+        float offsetValue = 10f;
         finalOffset += offsetValue;
         angleText.text = this.Angle.ToString();
     }
     
     public void SubOffset()
     {
-        float offsetValue = 0.5f;
+        float offsetValue = 10f;
         finalOffset -= offsetValue;
         angleText.text = Angle.ToString();
     }

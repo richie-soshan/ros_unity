@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119.92445, y: 15.334948}
+  m_AnchoredPosition: {x: 126.29694, y: 12.452536}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90268504
@@ -554,6 +554,18 @@ MonoBehaviour:
       - m_Target: {fileID: 434480073}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -814,8 +826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.53975, y: -130.13448}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 187.58438, y: -130.13448}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113740824
 MonoBehaviour:
@@ -950,7 +962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 203.64668, y: -22.503874}
+  m_AnchoredPosition: {x: 247, y: -24}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &115988272
@@ -1000,6 +1012,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1291329471}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1127,7 +1151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119.879135, y: -21.167753}
+  m_AnchoredPosition: {x: 126.251625, y: -24.050165}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143416579
@@ -1177,6 +1201,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1291329471}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1265,140 +1301,6 @@ RectTransform:
   m_AnchoredPosition: {x: -244.3687, y: 86.9296}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &191465798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 191465799}
-  - component: {fileID: 191465801}
-  - component: {fileID: 191465800}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &191465799
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191465798}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1924998824}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11, y: 7}
-  m_SizeDelta: {x: -8.5635, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &191465800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191465798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Publish
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -18.535765, w: -15.5470295}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &191465801
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191465798}
-  m_CullTransparentMesh: 1
 --- !u!1 &197384745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,7 +1774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.4897, y: -58.231895}
+  m_AnchoredPosition: {x: 247.8431, y: -59.728016}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278630539
@@ -1922,6 +1824,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1884653972}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2003,7 +1917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 315.09866, y: -25.51161}
+  m_AnchoredPosition: {x: 338, y: -25.51161}
   m_SizeDelta: {x: 43.6129, y: 26.529}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292518948
@@ -2139,8 +2053,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 244.3687, y: -86.9296}
-  m_SizeDelta: {x: -499.3793, y: -186.6261}
+  m_AnchoredPosition: {x: 200.25279, y: -90.8457}
+  m_SizeDelta: {x: -414.2433, y: -194.4584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311010221
 MonoBehaviour:
@@ -2350,7 +2264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257.95468, y: -22.502699}
+  m_AnchoredPosition: {x: 268.9546, y: -22.502699}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387549540
@@ -2396,7 +2310,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 387549541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsety
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &387549541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2719,6 +2659,8 @@ GameObject:
   - component: {fileID: 434480075}
   - component: {fileID: 434480074}
   - component: {fileID: 434480073}
+  - component: {fileID: 434480080}
+  - component: {fileID: 434480081}
   m_Layer: 0
   m_Name: shoulder_link
   m_TagString: Untagged
@@ -2876,6 +2818,30 @@ Transform:
   m_Father: {fileID: 34479172}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434480080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434480071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &434480081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434480071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &453140863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6298628804664092094, guid: 8702d73a6de544a2c92551ff497f58a0, type: 3}
@@ -3688,7 +3654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 315.0107, y: -96.32399}
+  m_AnchoredPosition: {x: 337.91205, y: -96.32399}
   m_SizeDelta: {x: 43.612, y: 23.6507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609626102
@@ -3961,7 +3927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 315.1394, y: 7.3416843}
+  m_AnchoredPosition: {x: 338.04074, y: 7.3416843}
   m_SizeDelta: {x: 43.6129, y: 31.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &651548682
@@ -4278,6 +4244,8 @@ GameObject:
   - component: {fileID: 726276748}
   - component: {fileID: 726276747}
   - component: {fileID: 726276746}
+  - component: {fileID: 726276753}
+  - component: {fileID: 726276754}
   m_Layer: 0
   m_Name: wrist_2_link
   m_TagString: Untagged
@@ -4435,6 +4403,30 @@ Transform:
   m_Father: {fileID: 2065038113}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &726276753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726276744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &726276754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726276744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &729333740
 GameObject:
   m_ObjectHideFlags: 0
@@ -4669,7 +4661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376.33493, y: -20.088934}
+  m_AnchoredPosition: {x: 409.29987, y: -25.145245}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811752494
@@ -4715,7 +4707,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811752495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsety
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &811752495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4855,7 +4873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -46, y: -0.000013616}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &838433205
@@ -4892,7 +4910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 315.05496, y: -60.652977}
+  m_AnchoredPosition: {x: 337.9563, y: -60.652977}
   m_SizeDelta: {x: 43.612, y: 28.8282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838433207
@@ -5610,7 +5628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.6548, y: -173.35747}
+  m_AnchoredPosition: {x: 269.6547, y: -173.35747}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913253776
@@ -5656,7 +5674,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 913253777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsetqz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &913253777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,8 +5894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 159.0366, y: -21.124266}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 183, y: -21.124266}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921563076
 MonoBehaviour:
@@ -5984,8 +6028,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.5854, y: -93.37329}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 187.668, y: -93.37329}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &962573897
 MonoBehaviour:
@@ -6120,7 +6164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.34679, y: -173.35866}
+  m_AnchoredPosition: {x: 247.70018, y: -174.85478}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &962694965
@@ -6170,6 +6214,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1087344233}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6293,13 +6349,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.42, z: -2.06}
+  m_LocalRotation: {x: -0, y: -0.6592841, z: -0, w: 0.75189394}
+  m_LocalPosition: {x: 1.53, y: 0.42, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -82.491, z: 0}
 --- !u!1 &1005878243
 GameObject:
   m_ObjectHideFlags: 8
@@ -6401,6 +6457,7 @@ GameObject:
   - component: {fileID: 1035250631}
   - component: {fileID: 1035250630}
   - component: {fileID: 1035250629}
+  - component: {fileID: 1035250635}
   m_Layer: 0
   m_Name: ur5
   m_TagString: Untagged
@@ -6422,8 +6479,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Topic: /chatter_
   TimeStep: 0
-  JointNames: []
-  JointStateWriters: []
+  JointNames:
+  - shoulder_pan_joint
+  - shoulder_lift_joint
+  - elbow_joint
+  - wrist_1_joint
+  - wrist_2_joint
+  - wrist_3_joint
+  JointStateWriters:
+  - {fileID: 434480080}
+  - {fileID: 1291329478}
+  - {fileID: 1884653979}
+  - {fileID: 2065038114}
+  - {fileID: 726276753}
+  - {fileID: 1087344232}
 --- !u!114 &1035250630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6436,9 +6505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae1d8da5a3c0644bb98a540ca597dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /joint_
   JointStateReaders:
-  - {fileID: 0}
+  - {fileID: 434480081}
+  - {fileID: 1291329479}
+  - {fileID: 1884653980}
+  - {fileID: 2065038115}
+  - {fileID: 726276754}
+  - {fileID: 1087344241}
   FrameId: Unity
 --- !u!114 &1035250631
 MonoBehaviour:
@@ -6498,6 +6572,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1035250635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035250628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa23b622c60c13f48bdfa74b2e974f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /lin_
+  PublishedTransform: {fileID: 2000931162}
+  FrameId: Unity
+  offsetvalx: 0
+  offsetvaly: 0
+  offsetvalz: 0
+  offsetvalqx: 0
+  offsetvalqy: 0
+  offsetvalqz: 0
+  offsetValue: 0.1
+  degoff: 20
 --- !u!1 &1087344231
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +6611,8 @@ GameObject:
   - component: {fileID: 1087344235}
   - component: {fileID: 1087344234}
   - component: {fileID: 1087344233}
+  - component: {fileID: 1087344232}
+  - component: {fileID: 1087344241}
   m_Layer: 0
   m_Name: wrist_3_link
   m_TagString: Untagged
@@ -6521,6 +6620,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1087344232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087344231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1087344233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6672,6 +6783,18 @@ Transform:
   m_Father: {fileID: 726276752}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087344241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087344231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1106449020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6708,7 +6831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377.03506, y: -170.94371}
+  m_AnchoredPosition: {x: 410, y: -176}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106449022
@@ -6754,7 +6877,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106449023}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsetqz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1106449023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6925,7 +7074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258, y: 14}
+  m_AnchoredPosition: {x: 269, y: 14}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138694572
@@ -6971,7 +7120,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1138694573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsetx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1138694573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7046,7 +7221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.62752, y: -133.11758}
+  m_AnchoredPosition: {x: 127, y: -136}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160171204
@@ -7096,6 +7271,18 @@ MonoBehaviour:
       - m_Target: {fileID: 726276746}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7506,7 +7693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119.78752, y: -95.00769}
+  m_AnchoredPosition: {x: 126.16001, y: -97.8901}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252610367
@@ -7556,6 +7743,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2065038107}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7708,6 +7907,8 @@ GameObject:
   - component: {fileID: 1291329473}
   - component: {fileID: 1291329472}
   - component: {fileID: 1291329471}
+  - component: {fileID: 1291329478}
+  - component: {fileID: 1291329479}
   m_Layer: 0
   m_Name: upper_arm_link
   m_TagString: Untagged
@@ -7865,6 +8066,30 @@ Transform:
   m_Father: {fileID: 434480079}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291329478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291329469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1291329479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291329469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1314949823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6453265635977742451, guid: d454589c5db7f4dfebf444ee2668d7c8, type: 3}
@@ -7918,7 +8143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 314.96564, y: -132.64847}
+  m_AnchoredPosition: {x: 337.86697, y: -132.64847}
   m_SizeDelta: {x: 43.612, y: 22.7773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319611291
@@ -8239,7 +8464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377.17798, y: -55.816956}
+  m_AnchoredPosition: {x: 410.14294, y: -60.87327}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357948469
@@ -8285,7 +8510,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1357948470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsetz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1357948470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8494,7 +8745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.39513, y: -134.45369}
+  m_AnchoredPosition: {x: 247.74852, y: -135.94981}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384447286
@@ -8544,6 +8795,18 @@ MonoBehaviour:
       - m_Target: {fileID: 726276746}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8761,7 +9024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377.08337, y: -132.03877}
+  m_AnchoredPosition: {x: 410.04834, y: -137.09508}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422186099
@@ -8807,7 +9070,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1422186100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsetqy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1422186100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8938,7 +9227,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 311010220}
-  - {fileID: 1924998824}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9028,7 +9316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376.24323, y: -93.928894}
+  m_AnchoredPosition: {x: 409.2082, y: -98.98521}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447070896
@@ -9074,7 +9362,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1447070897}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsetqx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1447070897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9149,7 +9463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 203.692, y: 13.99885}
+  m_AnchoredPosition: {x: 247.0454, y: 12.502729}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469060144
@@ -9199,6 +9513,18 @@ MonoBehaviour:
       - m_Target: {fileID: 434480073}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9282,7 +9608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.7031, y: -134.45256}
+  m_AnchoredPosition: {x: 269.703, y: -134.45256}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494800778
@@ -9328,7 +9654,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1494800779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsetqy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1494800779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9892,8 +10244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 159.08025, y: 14.032999}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 183.07993, y: 14.032999}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612799697
 MonoBehaviour:
@@ -10524,8 +10876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.48781, y: -171.9771}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 187.48926, y: -171.9771}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1660955787
 MonoBehaviour:
@@ -10703,8 +11055,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.63072, y: -56.85029}
-  m_SizeDelta: {x: 36.503, y: 13.756}
+  m_AnchoredPosition: {x: 187.751, y: -56.85029}
+  m_SizeDelta: {x: 66.8527, y: 13.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692769341
 MonoBehaviour:
@@ -11101,7 +11453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376.38022, y: 16.41379}
+  m_AnchoredPosition: {x: 409.34515, y: 11.357478}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811648928
@@ -11147,7 +11499,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1811648929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SubOffsetx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1811648929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11401,7 +11779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.79773, y: -58.230705}
+  m_AnchoredPosition: {x: 269.79764, y: -58.230705}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852912771
@@ -11448,13 +11826,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: fd106a313d5413140853feb5b10409c0, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsetz
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11648,6 +12040,8 @@ GameObject:
   - component: {fileID: 1884653974}
   - component: {fileID: 1884653973}
   - component: {fileID: 1884653972}
+  - component: {fileID: 1884653979}
+  - component: {fileID: 1884653980}
   m_Layer: 0
   m_Name: forearm_link
   m_TagString: Untagged
@@ -11805,6 +12199,30 @@ Transform:
   m_Father: {fileID: 1291329477}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1884653979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884653970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1884653980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884653970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893297025
 GameObject:
   m_ObjectHideFlags: 0
@@ -11841,7 +12259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257.86304, y: -96.34259}
+  m_AnchoredPosition: {x: 268.86295, y: -96.34259}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893297027
@@ -11887,7 +12305,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1893297028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: AddOffsetqx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250635}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.PoseStampedPublisher,
+          Assembly-CSharp
+        m_MethodName: SendPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1893297028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12006,7 +12450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.72218, y: -56.89576}
+  m_AnchoredPosition: {x: 127.09467, y: -59.77817}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920650200
@@ -12056,6 +12500,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1884653972}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12144,139 +12600,6 @@ RectTransform:
   m_AnchoredPosition: {x: -244.3687, y: 86.9296}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1924998823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1924998824}
-  - component: {fileID: 1924998827}
-  - component: {fileID: 1924998826}
-  - component: {fileID: 1924998825}
-  m_Layer: 5
-  m_Name: Publish Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1924998824
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924998823}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0052750376, w: 0.9999861}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 191465799}
-  m_Father: {fileID: 1423110141}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 248, y: -202}
-  m_SizeDelta: {x: 107.2047, y: 25.9841}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1924998825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924998823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1924998826}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1035250630}
-        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
-        m_MethodName: SendPos
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1924998826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924998823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1924998827
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924998823}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1931353673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12372,7 +12695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 203.55501, y: -96.34379}
+  m_AnchoredPosition: {x: 246.9084, y: -97.839905}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951092856
@@ -12422,6 +12745,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2065038107}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: SubOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12548,7 +12883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.604}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.57927, y: -172.02252}
+  m_AnchoredPosition: {x: 126.95176, y: -174.90494}
   m_SizeDelta: {x: 26.8045, y: 23.8593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962359065
@@ -12598,6 +12933,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1087344233}
         m_TargetAssemblyTypeName: HingeJointAngleCalculator, Assembly-CSharp
         m_MethodName: AddOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1035250630}
+        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.JointStatePublisher, Assembly-CSharp
+        m_MethodName: SendPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12878,7 +13225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 314.9166, y: -172.15602}
+  m_AnchoredPosition: {x: 337.81793, y: -172.15602}
   m_SizeDelta: {x: 43.6129, y: 26.1414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031183651
@@ -13105,6 +13452,8 @@ GameObject:
   - component: {fileID: 2065038109}
   - component: {fileID: 2065038108}
   - component: {fileID: 2065038107}
+  - component: {fileID: 2065038114}
+  - component: {fileID: 2065038115}
   m_Layer: 0
   m_Name: wrist_1_link
   m_TagString: Untagged
@@ -13262,6 +13611,30 @@ Transform:
   m_Father: {fileID: 1884653978}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2065038114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065038105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2065038115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065038105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3122a7138a008c14f83e8b3df6286693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2067481460
 PrefabInstance:
   m_ObjectHideFlags: 0

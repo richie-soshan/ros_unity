@@ -32,9 +32,10 @@ namespace RosSharp.RosBridgeClient
 
                 foreach (UrdfJoint urdfJoint in UrdfRobot.GetComponentsInChildren<UrdfJoint>())
                 {
-                    if(urdfJoint.JointType != UrdfJoint.JointTypes.Fixed)
+                    if (urdfJoint.JointType != UrdfJoint.JointTypes.Fixed)
                         jointStatePublisher.JointStateReaders.Add(urdfJoint.transform.AddComponentIfNotExists<JointStateReader>());
                 }
+                jointStatePublisher.InitializeMessage();
             }
             else
             {

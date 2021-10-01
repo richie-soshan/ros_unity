@@ -28,26 +28,20 @@ namespace RosSharp.RosBridgeClient
         protected override void Start()
         {
             base.Start();
-            InitializeMessage();
         }
 
-       /* private void FixedUpdate()
-        {
-            UpdateMessage();
-        }*/
+     
 
        public void SendPos()
        {
            UpdateMessage();
-           for (int i = 0; i < JointStateReaders.Count; i++)
-           {
-               JointStateReaders[i].callOff();
-           }
+            
        }
 
-        private void InitializeMessage()
+        public void InitializeMessage()
         {
             int jointStateLength = JointStateReaders.Count;
+            Debug.Log(jointStateLength);
             message = new MessageTypes.Sensor.JointState
             {
                 header = new MessageTypes.Std.Header { frame_id = FrameId },
@@ -72,6 +66,10 @@ namespace RosSharp.RosBridgeClient
                 
             }
             Publish(message);
+            foreach (var v in JointStateReaders)
+            {
+                v.callOff();
+            }
         }
 
         private void UpdateJointState(int i)
